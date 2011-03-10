@@ -1,0 +1,65 @@
+BOUT
+--------------------------------------------------------------------
+This class is written to be used as a credit card utility, allowing
+you to do validate the format of certain card types.
+
+Much of the information used to form the logic of this 
+class was sourced from Michael Gilleland's Java class, 
+which can be found at: http://www.merriampark.com/anatomycc.htm
+See his page(s) for his sources, and the RESOURCES section below
+for more on my resources.
+
+
+SOURCE
+--------------------------------------------------------------------
+https://github.com/jonathanwkelly/PHP-Credit-Card-Validation-Script
+
+The github repo also contains a GUI test interface.
+
+
+TERMS
+--------------------------------------------------------------------
+IIN: Issuer Identification Number
+
+MII: Major Industry Identifier
+
+Check Digit: The last digit of a card number, that is used in the 
+		Luhn Algorithm (see below) to determine if the number is a 
+		valid format.
+
+Luhn Algorithm: The algorithm used my most major card issuers to 
+		determine if a card format is valid.
+
+
+RESOURCES
+--------------------------------------------------------------------
+IIN and MII: http://en.wikipedia.org/wiki/Bank_card_number
+
+Luhn Algorithm: http://en.wikipedia.org/wiki/Luhn_algorithm
+
+ISO/IEC 7812 Standards: http://en.wikipedia.org/wiki/ISO/IEC_7812
+
+
+CUSTOMIZATION
+--------------------------------------------------------------------
+To make this class work for your application, you should
+review and make appropriate adjustments to:
+		var arrCardTypes
+  	var arrAcceptedMII
+
+
+RISK
+--------------------------------------------------------------------
+This script has been thoroughly vetted with dozens of real VISA, AMEX
+and MC numbers (I didn't have accessibility to any DISCOVER cards), 
+with legitimate responses. However, you too should test before 
+implementing into your application. The source files are available
+at my github (see SOURCE section above). You should also review the 
+IIN values at the RESOURCES listed above to ensure they are still 
+accurate at the time of implementation.
+
+
+LIABILITY
+--------------------------------------------------------------------
+You are solely responsible for any loss or security issues caused by
+any implementation of this script, either as a whole or any part(s).
