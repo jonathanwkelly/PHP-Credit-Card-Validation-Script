@@ -27,7 +27,7 @@ Check Digit: The last digit of a card number, that is used in the
 		Luhn Algorithm (see below) to determine if the number is a 
 		valid format.
 
-Luhn Algorithm: The algorithm used my most major card issuers to 
+Luhn Algorithm: The algorithm used by most major card issuers to 
 		determine if a card format is valid.
 
 
